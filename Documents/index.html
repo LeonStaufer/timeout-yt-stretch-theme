@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YouTube Stretch</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #fafafa; /* Light background color */
+            }
+            iframe {
+                border: none;
+                width: 100vw; /* Full width of the viewport */
+                height: 100vh; /* Full height of the viewport */
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            // Array of YouTube video IDs extracted from the provided URLs
+            const videos = [
+                "1xeYN8J0DLo", // Schulter-Nacken-Bereich
+                "pVKsuOjqEn4", // Wirbelsäule & Rumpf
+                "ucZHvzevinI", // Untere Extremitäten & Wirbelsäule
+            ];
+
+            // Select a random video
+            const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+
+            // Create an iframe element for the YouTube embed
+            const iframe = document.createElement("iframe");
+            iframe.src = `https://www.youtube.com/embed/${randomVideo}?autoplay=1&controls=1&start=3&iv_load_policy=3&cc_load_policy=0&color=white&rel=0`;
+            iframe.allow =
+                "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+            iframe.allowFullscreen = true;
+
+            // Append the iframe to the body
+            document.body.appendChild(iframe);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+{
+    "author": {
+        "name": "Leon Staufer",
+        "email": "leon@staufer.me",
+        "url": "https://github.com/leonstaufer/timeout-yt-stretch-theme"
+    },
+    "credits": {
+        "name": "Hochschulsport Hannover",
+        "url": "https://www.hochschulsport-hannover.de/de/sportangebote/leibniz-pausenexpress/leibniz-pausenexpress-digital"
+    },
+    "comments": "Stretch using 5-minute YouTube videos provided by Hochschulsport Hannover.",
+    "created": "2025-03-03",
+    "identifier": "yt-stretch",
+    "modified": "2025-04-10",
+    "version": 1,
+    "type": "html5",
+    "name": "YouTube Stretch",
+    "rootDocument": "index.html"
+}
